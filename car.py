@@ -13,15 +13,6 @@ class Car:
         return f"Car: {self.serial},{self.capacity}"
 
 
-class PassengerCar(Car):
-
-    def load(self, passengers):
-        self.capacity += passengers
-
-    def __str__(self):
-        return f"PassengerCar: {self.serial},{self.capacity}"
-
-
 class FreightCar(Car):
     def __init__(self, serial):
         self.goods = []
